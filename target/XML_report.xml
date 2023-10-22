@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="15.13">
+    <testcase classname="add cart functionality" name="Ensure cart being add succesfully" time="4.097">
+        <system-out><![CDATA[Given user in on saucedemo login page.......................................passed
+When user input standard_user as username...................................passed
+And user input secret_sauce as password.....................................passed
+And user click enter........................................................passed
+Then user verify success login result.......................................passed
+When user click button add cart.............................................passed
+And user click another button add cart......................................passed
+And user click icon cart....................................................passed
+Then in my cart page will see a product being added.........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login functionality" name="Ensure user succesfully login" time="2.533">
+        <system-out><![CDATA[Given user in on saucedemo login page.......................................passed
+When user input standard_user as username...................................passed
+And user input secret_sauce as password.....................................passed
+And user click enter........................................................passed
+Then user verify success login result.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login functionality" name="Ensure user failed login" time="2.082">
+        <system-out><![CDATA[Given user in on saucedemo login page.......................................passed
+When user input standard_user as username...................................passed
+And user input secret_saucee as password....................................passed
+And user click enter........................................................passed
+Then user verify failed login result........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Logout functionality" name="Ensure logout succesfully" time="2.594">
+        <system-out><![CDATA[Given user in on saucedemo login page.......................................passed
+When user input standard_user as username...................................passed
+And user input secret_sauce as password.....................................passed
+And user click enter........................................................passed
+Then user verify success login result.......................................passed
+When user click icon react burger...........................................passed
+And user click logout link..................................................passed
+Then user redirect to login page............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="payment functionality" name="Ensure cart being add succesfully" time="3.425">
+        <system-out><![CDATA[Given user in on saucedemo login page.......................................passed
+When user input standard_user as username...................................passed
+And user input secret_sauce as password.....................................passed
+And user click enter........................................................passed
+Then user verify success login result.......................................passed
+When user click button add cart.............................................passed
+And user click another button add cart......................................passed
+And user click icon cart....................................................passed
+Then in my cart page will see a product being added.........................passed
+When user click checkout button.............................................passed
+Then user redirected to checkout page.......................................passed
+When user input iqbal as firstname..........................................passed
+And user input laksana as last_name.........................................passed
+And user input 11111 as postal_code.........................................passed
+And user click button continue..............................................passed
+Then user redirected to checkout overview page..............................passed
+When user click button finish...............................................passed
+Then user redirected to complete checkout page..............................passed
+]]></system-out>
+    </testcase>
+</testsuite>
